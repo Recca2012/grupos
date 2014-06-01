@@ -13,6 +13,6 @@ shinyServer(function(input, output, session) {
   banco.grupos2<-reactive({banco.grupos2})
   
   output$plot1 <- renderPlot({
-    plotar.grupos(banco=dados2(),cluster=banco.grupo2(),ngrupo=input$ngrupo,grupo=input$grupo,shape=shape2())
+    plotar.grupos(banco=dados2(),cluster=banco.grupos2(),ngrupo=input$ngrupo,grupo=input$grupo,shape=shape2())
   })
 })
