@@ -38,6 +38,14 @@ plotar.grupos<-function(banco,cluster,ngrupo,grupo,shape){
   plotar.mapa(shape=shape,dados=bancoplotar)
 }
 
+plotar.tabela<-function(cluster,ngrupo,grupo){
+  grupoplotar<-cluster[[ngrupo]][which(cluster[[ngrupo]]$kmeans==grupo),c(1,3)]
+  names(grupoplotar)<-c("Cancer","Grupo por kmeans")
+  rownames(grupoplotar)<-NULL
+  print(grupoplotar)
+
+}
+
 
 
 

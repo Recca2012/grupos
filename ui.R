@@ -7,8 +7,11 @@ shinyUI(pageWithSidebar(
   ),
   mainPanel(
     
-    h4("Quantidade"),
-    plotOutput("plot1")
+    h4("SMR dos grupos"),
+    plotOutput("plot1"),
+    
+    h4("Tabela dos Canceres"),
+    tableOutput("tab1")
 
   )
 ))

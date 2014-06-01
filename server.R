@@ -15,4 +15,8 @@ shinyServer(function(input, output, session) {
   output$plot1 <- renderPlot({
     plotar.grupos(banco=dados2(),cluster=banco.grupos,ngrupo=input$ngrupo,grupo=input$grupo,shape=shape2())
   })
+  
+  output$tab1<-renderTable({
+    plotar.tabela(cluster=banco.grupos,ngrupo=input$ngrupo,grupo=input$grupo)
+  })
 })
